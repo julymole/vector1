@@ -617,7 +617,7 @@ main {
 .title_block {
   max-width: 100%;
   padding: 11.5% 13.7% 2%;
-  background-image: url(../../img/title_block_bg.jpg);
+  background-image: url(../img/title_block_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -1420,7 +1420,7 @@ main {
   }
 }
 
-.webp .title_block { background-image: url(../../img/title_block_bg.webp); }
+.webp .title_block { background-image: url(../img/title_block_bg.webp); }
 
 .webp .choose-us__item.item1 { background-image: url(../img/choose_us1.webp); }
 
