@@ -1,0 +1,180 @@
+.catalog {
+	padding: 20px 15.83% 104px;
+
+	h3 {
+		@include h3;
+	}
+}
+
+.catalog-content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.catalog__content-category {
+	@include content-category;
+	width: 49%;
+}
+
+.catalog__content-category-img {
+	margin-top: 15px;
+}
+
+.catalog__content-category-text {
+	@include content-category-text;
+
+	h4 {
+		display: flex;
+		width: 300px;
+		min-height: 62px;
+		align-items: center;
+	}
+}
+
+@media (max-width:1760px) {
+	.catalog__content-category {
+		padding-left: 0;
+	}
+
+	.catalog__content-category-text {
+		h4 {
+			width: 250px;
+		}
+	}
+}
+
+@media (max-width:1550px) {
+	.catalog {
+		padding: 20px 10% 104px;
+	}
+
+	.catalog__content-category {
+		padding-right: 5px;
+	}
+
+	.catalog__content-category-text {
+		margin-left: -40px;
+		width: 57%;
+	}
+}
+
+@media (max-width:1250px) {
+	.catalog {
+		padding: 20px 5% 104px;
+	}
+
+}
+
+@media (max-width:1100px) {
+	.catalog {
+		padding: 20px 15% 104px;
+	}
+
+	.catalog__content-category {
+		width: 90%;
+		padding-right: 35px;
+	}
+
+	.catalog__content-category-text {
+		width: 50%;
+	}
+}
+
+@media (max-width:950px) {
+	.catalog {
+		padding: 20px 10% 104px;
+	}
+}
+
+@media (max-width:760px) {
+	.catalog__content-category {
+		width: 100%;
+	}
+
+	.catalog__content-category-text {
+		width: 60%;
+	}
+}
+
+@media (max-width:610px) {
+	.catalog__content-category {
+		padding: 20px 10px 25px 0;
+	}
+
+	.catalog__content-category-img {
+		width: 95%;
+		height: auto;
+		margin-top: 45px;
+	}
+
+	.catalog__content-category-text {
+		h4 {
+			font-size: 19px;
+			width: 210px;
+		}
+
+		p {
+			margin: 0;
+			font-size: 15px;
+		}
+	}
+}
+
+@media (max-width:500px) {
+	.catalog {
+		padding: 20px 5% 104px;
+	}
+
+	.catalog__content-category {
+		padding: 7% 0 10% 0;
+	}
+
+	.catalog__content-category-img {
+		margin-top: 25px;
+	}
+
+	.catalog__content-category-text {
+		width: 50%;
+
+		h4 {
+			width: 170px;
+			min-height: 50px;
+		}
+	}
+}
+
+@media (max-width:400px) {
+	.catalog__content-category {
+		height: 200px;
+		padding: 5% 0 7% 0;
+	}
+.catalog__content-category-img {
+		width: 100%;
+	}
+
+	.catalog__content-category-text {
+		width: 55%;
+		p {
+			font-size: 14px;
+			line-height: 125%;
+		}
+	}
+}
+@media (max-width:350px) {
+	.catalog__content-category {
+		height: 180px;
+		padding: 3% 0 5% 0;
+	}
+	.catalog__content-category-img {
+		margin-top: 15px;
+	}
+	.catalog__content-category-text {
+		h4 {
+			width: 150px;
+			line-height: 110%;
+			min-height: 40px;
+			font-size: 16px;
+		}
+	}
+}

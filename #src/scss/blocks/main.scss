@@ -145,7 +145,7 @@ main {
 
 
 .choose-us {
-	padding: 65px 15.83% 65px 15.83%;
+	padding: 65px 15% 65px 15.83%;
 	box-sizing: border-box;
 
 	h3 {
@@ -279,7 +279,7 @@ main {
 }
 
 .products {
-	padding: 15px 15.83% 50px;
+	padding: 15px 15% 50px 15.83%;
 
 	h3 {
 		@include h3;
@@ -302,37 +302,13 @@ main {
 }
 
 .products__content-category {
-	width: 640px;
-	height: 261px;
-	padding: 38px 33px 38px 24px;
-	box-sizing: border-box;
-	display: flex;
-	justify-content: space-between;
-	@include shadow;
-	text-decoration: none;
-	margin: 0 0 30px;
+	@include content-category;
 }
-
+.products__content-category-img {
+	margin-top: 15px;
+}
 .products__content-category-text {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 52%;
-
-	h4 {
-		@include h4;
-		margin: 0;
-	}
-
-	p {
-		@include txt400;
-		line-height: 150%;
-		margin: 25px 0 20px;
-	}
-
-	span {
-		@include detail;
-	}
+	@include content-category-text;
 }
 
 @media (max-width: 1890px) {
@@ -659,7 +635,7 @@ main {
 }
 
 .news {
-	padding: 34px 15.83% 110px;
+	padding: 34px 15% 110px 15.83%;
 	box-sizing: border-box;
 
 	h3 {
