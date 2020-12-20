@@ -1,0 +1,313 @@
+footer {
+	max-width: 100%;
+	padding: 38px 15% 28px 15.83%;
+	box-sizing: border-box;
+	background-color: $color-txt;
+}
+
+.footer__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.footer__title {
+	display: inline-block;
+	margin: 0 0 15px;
+	padding: 0 0 15px 0;
+	box-sizing: border-box;
+	@include h4;
+	color: #ffffff;
+	border-bottom: 1px solid #ffffff;
+	text-decoration: none;
+}
+
+.footer__logo {
+	margin: 30px 0 0 0;
+}
+
+.footer__nav-wrap {
+	display: flex;
+	justify-content: space-between;
+	width: 45%;
+}
+
+.footer__aboutus {
+	@include flex;
+}
+
+.footer__aboutus-link {
+	@include txt;
+	color: #ffffff;
+	margin: 0 0 18px;
+}
+
+.footer__products {
+	@include flex;
+}
+
+.footer__products-link {
+	@include txt;
+	color: #ffffff;
+	margin: 0 0 18px;
+}
+
+.footer__toclients {
+	@include flex;
+}
+
+.footer__toclients-link {
+	@include txt;
+	color: #ffffff;
+	margin: 0 0 18px;
+}
+
+.footer__questions {
+	@include flex;
+	//margin-left: 17px;
+
+	span {
+		display: block;
+		width: 285px;
+		@include txt;
+		color: #ffffff;
+		margin: 0 0 35px;
+	}
+
+	button {
+		@include btn;
+	}
+}
+
+
+.footer__contact {
+	h4 {
+		display: inline-block;
+		margin: 0 0 22px;
+		padding: 0 20px 15px 0;
+		box-sizing: border-box;
+		@include h4;
+		color: #ffffff;
+		border-bottom: 1px solid #ffffff;
+	}
+}
+
+.footer__contact-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__tel {
+	@include contact;
+
+	&::before {
+		@include contacts-before;
+		background-position: 75px -10px;
+	}
+}
+
+.footer__mail {
+	@include contact;
+	font-size: 18px;
+
+	&::before {
+		@include contacts-before;
+		background-position: -10px -7px;
+	}
+}
+
+.footer__address {
+	@include contact;
+	width: 380px;
+
+	&::before {
+		@include contacts-before;
+		background-position: 29px -12px;
+	}
+}
+
+.footer__socials {
+	display: flex;
+	justify-content: space-between;
+	width: 160px;
+}
+
+.footer__socials-fb {
+	@include socials;
+	background-position: -2px -2px;
+}
+
+.footer__socials-vk {
+	@include socials;
+	background-position: 94px -2px;
+}
+
+.footer__socials-yandex {
+	@include socials;
+	background-position: 30px -2px;
+}
+
+
+
+.footer__tiny {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 55px;
+}
+
+.footer__tiny-link {
+	font-family: $font700, "Arial", sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	text-decoration: none;
+
+	span {
+		color: $bg-btn;
+	}
+}
+
+@media (max-width: 1600px) {
+	footer {
+		padding: 38px 5% 28px;
+	}
+}
+
+@media (max-width: 1150px) {
+	footer {
+		padding: 38px 10% 28px;
+	}
+
+	.footer__nav {
+		align-items: center;
+	}
+
+	.footer__logo {
+		margin: 0;
+	}
+
+	.footer__nav-wrap {
+		flex-direction: column;
+		align-items: center;
+		width: 30%;
+	}
+
+	.footer__aboutus-link,
+	.footer__products-link,
+	.footer__toclients-link {
+		display: none;
+	}
+
+	.footer__contact-wrap {
+		flex-wrap: wrap;
+	}
+
+	.footer__tel,
+	.footer__mail,
+	.footer__address {
+		margin: 0 30px 20px 0;
+	}
+}
+
+@media (max-width: 1000px) {
+	.footer__nav {
+		align-items: flex-start;
+	}
+
+	.footer__title {
+		font-size: 17px;
+	}
+
+	.footer__questions {
+		span {
+			width: 225px;
+			font-size: 12px;
+			margin-bottom: 8px;
+		}
+	}
+
+	.footer__tel,
+	.footer__mail,
+	.footer__address {
+		font-size: 13px;
+		margin: 0 10px 20px;
+	}
+
+	.footer__address {
+		width: 270px;
+
+		&::before {
+			width: 28px;
+			background-position: 29px -12px;
+		}
+	}
+
+	.footer__tiny {
+		margin: 20px 0 0;
+
+	}
+
+	.footer__tiny-link {
+		font-size: 10px;
+		font-family: $font400, "Arial", sans-serif;
+	}
+}
+
+@media (max-width: 852px) {
+	.footer__address {
+		width: 350px;
+	}
+}
+
+@media (max-width: 720px) {
+	footer {
+		padding: 38px 5% 28px;
+	}
+}
+
+@media (max-width: 640px) {
+	footer {
+		padding: 38px 15% 28px;
+	}
+
+	.footer__logo {
+		img {
+			width: 80%;
+			height: auto;
+		}
+	}
+
+	.footer__nav {
+		flex-wrap: wrap;
+	}
+	.footer__questions {
+		margin-top: -40px;
+	}
+
+	.footer__contact {
+		margin-top: 30px;
+
+		.footer__title {
+			display: none;
+		}
+	}
+}
+@media (max-width: 530px) {
+	footer {
+		padding: 38px 5% 20px;
+	}
+	.footer__nav-wrap {
+		width: 110px;
+	}
+}
+@media (max-width: 340px) {
+	.footer__logo {
+		width: 170px;
+		img {
+			width: 70%;
+			height: auto;
+		}
+	}
+	.footer__tiny-link {
+		font-size: 9px;
+	}
+}
