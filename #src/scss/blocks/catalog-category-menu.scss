@@ -1,0 +1,135 @@
+.category-menu {
+	position: absolute;
+	top: 210px;
+	padding: 0;
+
+	li {
+		list-style-type: none;
+		width: 304px;
+		height: 72px;
+		padding: 0 0 0 20px;
+		@include shadow;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		background-color: #ffffff;
+	}
+}
+
+.category-menu-link {
+	@include txt;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&::before {
+		content: "";
+		display: block;
+		width: 16px;
+		height: 2px;
+		background-color: $bg-btn;
+		margin-right: 8px;
+	}
+}
+
+.category-menu-btn {
+	display: none;
+}
+
+@media (max-width: 1450px) {
+	.category-menu {
+		top: 0;
+	}
+}
+
+@media (max-width: 700px) {
+	.category-menu {
+		max-width: 95%;
+		padding: 5px 0;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		overflow-x: scroll;
+		&::-webkit-scrollbar {
+    display: none;
+  }
+		li {
+			margin-right: 20px;
+			padding: 0;
+		}
+	}
+	.category-menu-link {
+		justify-content: flex-start;
+		padding: 0 20px 0 10px;
+		font-size: 13px;
+	}
+}
+
+/*
+@media (max-width: 1450px) {
+	.category-menu-wrap {
+		position: absolute;
+		top: -55px;
+		z-index: 2;
+		left: -22.7%;
+		transition: all 0.8s ease 0s;
+	}
+	.category-menu-wrap.active {
+		left: 6%;
+	}
+
+	.category-menu {
+		top: 0;
+		z-index: 4;
+	}
+
+	.category-menu-btn-open {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border-top: 175px solid transparent;
+		border-bottom: 175px solid transparent;
+		border-left: 35px solid $bg-btn;
+		position: absolute;
+		top: 22px;
+		right: -358px;
+		z-index: 3;
+	}
+
+	.category-menu-btn-close {
+		position: absolute;
+		bottom: -395px;
+		left: -20px;
+		z-index: 10;
+		display: block;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		box-shadow: 2px 2px 10px 0px rgba(50, 54, 70, 0.15);
+		background-color: #ffffff;
+
+		&::before,
+		&:after {
+			content: "";
+			display: block;
+			width: 2px;
+			height: 15px;
+			background-color: $color-link;
+			position: absolute;
+			top: 13px;
+			left: 19px;
+		}
+
+		&::before {
+			transform: rotate(-45deg);
+		}
+
+		&::after {
+			transform: rotate(45deg);
+		}
+	}
+}
+*/

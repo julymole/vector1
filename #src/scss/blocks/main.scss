@@ -5,7 +5,7 @@ main {
 .title_block {
 	max-width: 100%;
 	padding: 11.5% 13.7% 2%;
-	background-image: url(../img/title_block_bg.jpg);
+	//background-image: url(../img/title_block_bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: auto;
@@ -183,22 +183,6 @@ main {
 		@include txt400;
 		font-size: 16px;
 	}
-}
-
-.choose-us__item.item1 {
-	background-image: url(../img/choose_us1.png);
-}
-
-.choose-us__item.item2 {
-	background-image: url(../img/choose_us2.png);
-}
-
-.choose-us__item.item3 {
-	background-image: url(../img/choose_us3.png);
-}
-
-.choose-us__item.item4 {
-	background-image: url(../img/choose_us4.png);
 }
 
 @media (max-width: 1800px) {
@@ -485,14 +469,7 @@ main {
 		display: flex;
 		align-items: center;
 	}
-}
-
-.customers-slider__item {
-	padding-left: 25%;
-	box-sizing: border-box;
-}
-
-.slick-arrow {
+	.slick-arrow {
 	display: block;
 	width: 40px;
 	height: 40px;
@@ -541,14 +518,22 @@ main {
 		left: 10%;
 	}
 }
-
-.slick-disabled {
+	.slick-disabled {
 	background-color: transparent;
 
 	&::before {
 		border-color: transparent transparent #ffffff #ffffff;
 	}
 }
+}
+
+.customers-slider__item {
+	padding-left: 25%;
+	box-sizing: border-box;
+}
+
+
+
 
 @media (max-width: 1800px) {
 	.customers-slider {
