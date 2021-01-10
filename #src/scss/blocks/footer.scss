@@ -5,7 +5,7 @@ footer {
 	background-color: $color-txt;
 }
 
-.footer__nav {
+.footer__links {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -32,31 +32,11 @@ footer {
 	width: 45%;
 }
 
-.footer__aboutus {
+.footer__nav {
 	@include flex;
 }
 
-.footer__aboutus-link {
-	@include txt;
-	color: #ffffff;
-	margin: 0 0 18px;
-}
-
-.footer__products {
-	@include flex;
-}
-
-.footer__products-link {
-	@include txt;
-	color: #ffffff;
-	margin: 0 0 18px;
-}
-
-.footer__toclients {
-	@include flex;
-}
-
-.footer__toclients-link {
+.footer__nav-link {
 	@include txt;
 	color: #ffffff;
 	margin: 0 0 18px;
@@ -177,7 +157,7 @@ footer {
 		padding: 38px 10% 28px;
 	}
 
-	.footer__nav {
+	.footer__links {
 		align-items: center;
 	}
 
@@ -191,9 +171,7 @@ footer {
 		width: 30%;
 	}
 
-	.footer__aboutus-link,
-	.footer__products-link,
-	.footer__toclients-link {
+	.footer__nav-link {
 		display: none;
 	}
 
@@ -209,7 +187,7 @@ footer {
 }
 
 @media (max-width: 1000px) {
-	.footer__nav {
+	.footer__links {
 		align-items: flex-start;
 	}
 
@@ -258,15 +236,9 @@ footer {
 	}
 }
 
-@media (max-width: 720px) {
-	footer {
+@media (max-width: 680px) {
+	.footer {
 		padding: 38px 5% 28px;
-	}
-}
-
-@media (max-width: 640px) {
-	footer {
-		padding: 38px 15% 28px;
 	}
 
 	.footer__logo {
@@ -276,7 +248,7 @@ footer {
 		}
 	}
 
-	.footer__nav {
+	.footer__links {
 		flex-wrap: wrap;
 	}
 	.footer__questions {

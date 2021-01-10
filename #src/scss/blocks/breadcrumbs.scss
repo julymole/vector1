@@ -1,6 +1,9 @@
 .breadcrumbs {
 	padding: 30px 15.83% 0;
 	display: flex;
+	li {
+		list-style-type: none;
+	}
 }
 .breadcrumbs__home {
 	@include bc;

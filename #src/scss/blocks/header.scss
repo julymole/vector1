@@ -271,7 +271,7 @@ body {
 	.header__row {
 		flex-direction: column;
 		align-items: center;
-		height: 520px;
+		min-height: 520px;
 		padding: 0 0 30px;
 	}
 
@@ -317,7 +317,7 @@ body {
 		margin: 35px 80% 280px 100px;
 	}
 	.header__row {
-		height: 570px;
+		min-height: 570px;
 	}
 	.header__nav {
 		margin-top: 80px;

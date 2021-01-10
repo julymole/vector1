@@ -53,27 +53,13 @@ $('body').on('click', '.category-menu-btn-open', function (event) {
 		]
 	});
 	
-	$('.category1__slider').slick({
+	$('.category__slider').slick({
 		arrows: true,
 		dots: true,
 		slidesToShow: 1,
 	});
-	$('.category2__slider').slick({
-		arrows: true,
-		dots: true,
-		slidesToShow: 1,
-	});
-	$('.category3__slider').slick({
-		arrows: true,
-		dots: true,
-		slidesToShow: 1,
-	});
-	$('.category4__slider').slick({
-		arrows: true,
-		dots: true,
-		slidesToShow: 1,
-	});
-	$('.category5__slider').slick({
+	
+	$('.product__slider').slick({
 		arrows: true,
 		dots: true,
 		slidesToShow: 1,
