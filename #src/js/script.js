@@ -1,5 +1,7 @@
 //@@include('alert.js')
 @@include('slick.js');
+@@include('jquery.maskedinput.min.js');
+
 $(document).ready(function (event) {
 
 	$('body').on('click', '.burger', function (event) {
@@ -64,5 +66,10 @@ $('body').on('click', '.category-menu-btn-open', function (event) {
 		dots: true,
 		slidesToShow: 1,
 	});
+	
+	
+	
+	
+	$('#phone').mask("+7(999)99-99");
 
 });
